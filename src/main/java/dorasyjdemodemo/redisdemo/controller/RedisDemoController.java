@@ -1,6 +1,7 @@
 package dorasyjdemodemo.redisdemo.controller;
 
 import dorasyjdemodemo.redisdemo.biz.RedisUtil;
+import dorasyjdemodemo.redisdemo.biz.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,10 +16,12 @@ public class RedisDemoController {
     @Autowired
     private RedisUtil redisUtil;
     @RequestMapping("gteModel")
-    public String modelAndView(){
-        redisUtil.del("zhaoTest");
+    public Result modelAndView(){
+        redisUtil.set("祝", "陈");//设置
+        System.out.println(redisUtil.get("祝"));//获取
+        redisUtil.del("zhaoTest");//删除
         System.out.println(redisUtil.get("zhaoTest"));
-        return "ok";
+        return new Result();
     }
 }
 
