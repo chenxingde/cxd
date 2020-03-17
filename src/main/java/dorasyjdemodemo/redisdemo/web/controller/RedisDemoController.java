@@ -1,4 +1,4 @@
-package dorasyjdemodemo.redisdemo.controller;
+package dorasyjdemodemo.redisdemo.web.controller;
 
 import dorasyjdemodemo.redisdemo.biz.RedisUtil;
 import dorasyjdemodemo.redisdemo.biz.Result;
@@ -22,6 +22,7 @@ public class RedisDemoController {
         redisUtil.del("zhaoTest");//删除
         System.out.println(redisUtil.get("zhaoTest"));
         return new Result();
+
     }
 }
 
