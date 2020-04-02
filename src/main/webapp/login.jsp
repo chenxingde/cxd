@@ -26,7 +26,7 @@
             background: #f2f2f2;
         }
     </style>
-    <title>Title</title>
+    <title>陈兴德祝玉姣爱的秘笈登陆</title>
 </head>
 <body>
 <div class="content">
@@ -42,12 +42,12 @@
                 <p class="thirdline"></p>
             </div>
             <div class="rightpart">
-                <h3 class="logintitle">陈兴德祝玉娇爱的秘笈</h3>
+                <h3 class="logintitle">陈兴德祝玉姣爱的秘笈</h3>
                 <div class="box">
                     <span>陈兴德</span><input type="text" id="username" name="phone" value="${admin.phone }" placeholder="请输入陈兴德手机号" class="username" style="color: rebeccapurple">
                 </div>
                 <div class="box">
-                    <span>祝玉娇</span><input type="password" id="pwd" name="userPwd" value="" placeholder="请输入祝玉娇手机号" class="userpass" style="color: rebeccapurple">
+                    <span>祝玉姣</span><input type="password" id="pwd" name="userPwd" value="" placeholder="请输入祝玉姣手机号" class="userpass" style="color: rebeccapurple">
                 </div>
                 <div style="position: relative;" class="box">
                     <span>验证码</span><input type="button" value = "获取验证码" onclick="getCode()" id = "yzmCode" class="get">
