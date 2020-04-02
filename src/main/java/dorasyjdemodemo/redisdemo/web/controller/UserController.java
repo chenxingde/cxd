@@ -17,7 +17,7 @@ import javax.xml.ws.RespectBinding;
  * @Author: 陈兴德
  * @Date: 2020-03-17 15:11
  */
-@ RestController
+@RestController
 @Slf4j
 @RequestMapping("/suUser")
 public class UserController {
@@ -33,4 +33,5 @@ public class UserController {
     public SuUser getUsgetUserBysqler(Integer id){
         return suUserService.selectUserById(id);
     }
+
 }

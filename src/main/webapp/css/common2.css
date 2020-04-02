@@ -1,0 +1,729 @@
+
+/*!	* common.css * CSS Document * The site is designed by CHUANGHUI,Inc 11/2015 */
+@charset "utf-8";
+/*顶部背景*/
+.top{
+	width: 100%;
+	height: 50px;
+	background: #f2f2f2;
+	border: 1px solid #e3e3e3;
+}
+/*中间内容主体*/
+.wrap{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.content{
+	margin: 17px 30px 21px 28px;
+	height: 100%;
+}
+/*左侧*/
+.content .c_left{
+	width: 26%;
+	height: 100%;
+}
+.message .message_ul{
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+	margin-left: 5px;
+
+}
+.message .message_ul li{
+	height: 37px;
+	line-height: 37px;
+	color: #333;
+	font-size: 16px;
+}
+.message .message_ul li.col{
+	border-bottom: 1px solid #e3e3e3;
+}
+/*左侧搜索框*/
+.search-user{
+	margin-top: 29px;
+	margin-bottom: 19px;
+	width: 451px;
+	height: 45px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	line-height: 43px;
+	overflow: hidden;
+}
+.search-user input{
+	border: 0;
+}
+.search-user .user-ico{
+	background: url(../../../upload/imgs/user_icon.png) no-repeat 13px 7px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+.search-user .user-text{
+	width: 400px;
+	height: 45px;
+	line-height: 43px;
+}
+/*用户列表*/
+.user-list{
+	margin:0 auto;
+	text-align: center;
+}
+.user-list .spacing{
+	height: 10px;
+}
+.user-list table{
+	width: 100%;
+	border-collapse:collapse;
+}
+.user-list table thead{
+	background: #e3e3e3;
+	height: 55px;
+}
+.user-list table thead tr{
+	height: 55px;
+}
+.user-list table thead tr th{
+	width: 68px;
+	text-align: center;
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+}
+.user-list table tbody tr{
+	border-bottom: 1px solid #e3e3e3;
+	border-left: 1px solid #e3e3e3;
+	border-right: 1px solid #e3e3e3;
+	height: 58px;
+	/*line-height: 58px;*/
+	font-size: 16px;
+	color: #333;
+	cursor: pointer;
+}
+/*.user-list table tbody tr.current{
+	background: #f2f2f2;
+}*/
+.user-list table tbody tr.pay{
+	background: #ffcd8f;
+}
+.user-list table tbody tr.ppay{
+	background: green;
+}
+.user-list table tbody tr.ppay2{
+	background: white;
+}
+.user-list td{
+	empty-cells:show;
+}
+/*中间*/
+.c_center{
+	width: 36%;
+	height: 100%;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.c_center .center_top{
+	/*width: 700px;*/
+	/*height: 285px;*/
+	background: #f2f2f2;
+	border-bottom: 1px solid #e3e3e3;
+
+}
+.c_center .center_top .center_detail{
+	padding-left: 19px;
+	padding-top: 17px;
+}
+/*客户信息*/
+.center_detail ul li{
+	color: #333;
+    display: inline-block;
+    font-size: 12px;
+    line-height:18px;
+    *line-height: 32px;
+    width: 100%;
+}
+.center_detail ul li span.remarks,.center_detail ul li span.c_add{
+	border: 1px solid #e3e3e3;
+	border-radius: 8px;
+	width: 50px;
+	height: 18px;
+	background: #b7b7b7;
+	text-align: center;
+	line-height: 16px;
+	display: inline-block;
+	margin-left: 40px;
+	cursor: pointer;
+}
+.center_detail ul li i{
+	font-style: normal;
+}
+.center_detail ul li.c_title span.c_title_text{
+	width: 98px;
+	height: 20px;
+	border:1px solid #999;
+	background: #fff;
+	display: inline-block;
+	text-align: center;
+	line-height: 18px;
+	position: relative;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.center_detail ul li.c_title span.c_title_text:hover i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background: url(../images/text_close.png) no-repeat top center;
+	display: inline-block;
+	width: 11px;
+	height: 11px;
+}
+/*对话框*/
+.c_center .center_bottom{
+	margin-top: 5px;
+	/*width: 700px;*/
+	/*height: 789px;*/
+	padding-bottom: 21px;
+}
+.c_center .center_bottom .c_b_head{
+	border: 1px solid #e3e3e3;
+	/*width: 700px;*/
+	height: 30px;
+	background: #11e6c0;
+	line-height: 30px;
+	position: relative;
+}
+.c_center .center_bottom .c_b_head h4{
+	line-height: 32px;
+	padding-left: 17px;
+}
+.c_center .center_bottom .c_b_head span.c_b_icon{
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	margin-top: -2px;
+	*margin-top: 2px;
+}
+.c_center .center_bottom .c_b_head span.history_order{
+	position: absolute;
+	right: 14px;
+	border: 1px solid #e3e3e3;
+	background: #fff;
+	width: 117px;
+	height: 16px;
+	text-align: center;
+	top: 6px;
+	line-height: 13px;
+}
+.c_center .center_bottom .c_b_head span.history_order a{
+	color: #333;
+	font-size: 12px;
+	text-decoration: none;
+}
+.c_center .center_bottom .chat{
+	/*width: 700px;*/
+	/*height: 754px;*/
+	background: #cffaf2;
+	position: relative;
+}
+.chat .chat_flow{
+	/*height: 398px;*/
+	height: 285px;
+	/*border-bottom: 1px solid #999;*/
+	overflow: auto;
+}
+.chat table{
+	width: 100%;
+	border-collapse:collapse;
+}
+.chat table tbody tr{
+	width: 100%;
+	background: #cffaf2 !important;
+}
+.chat table tbody tr.odd {
+    text-align: right;
+}
+.chat table tbody tr.even {
+    text-align: left;
+}
+.chat table tbody tr td{
+	padding:10px;
+}
+.chat table tbody tr td p{
+	font-size: 16px;
+	color: #333;
+}
+.chat table tbody tr td p img{
+	width: 29px;
+	height: 28px;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 11px;
+}
+.chat table tbody tr td p span.chat_user{
+	border:1px solid #e3e3e3;
+	padding: 8px 9px;
+	font-size: 12px;
+	background: #fff;
+	overflow: hidden;
+	width: 445px;
+}
+.chat table tbody tr td time{
+	font-size: 14px;
+	color: #666;
+}
+.chat .chat_look{
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	/*height: 117px;*/
+	height: 100px;
+	width: 100%;
+	padding-left: 10px;
+	width: 100%;
+}
+.chat .chat_look ul{
+	padding-top: 12px;
+}
+.chat .chat_look ul li{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	margin-right: 9px;
+	margin-bottom: 6px;
+}
+.chat .chat_look ul li a{
+	display: inline-block;
+	height: 33px;
+	width: 94px;
+	font-size: 14px;
+	color: #333;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #999;
+	text-decoration: none;
+}
+.chat .textarea{
+	position: relative;
+}
+.chat .textarea textarea{
+	/*width: 100%;*/
+	height: 223px;
+	background: #cffaf2;
+	border: 0;
+	font-size: 16px;
+	color: #333;
+	padding-top: 14px;
+	padding-left: 22px;
+	width: 98%;
+}
+.chat .textarea button.chat_send{
+	position: absolute;
+	bottom: 9px;
+	right: 9px;
+	width: 135px;
+	height: 40px;
+	border-radius: 7px;
+	background: #11e6c0;
+	color: #fff;
+	font-size: 24px;
+	border:0;
+}
+/*右侧*/
+.c_right{
+	/*width: 670px;*/
+	width: 35%;
+	height: 100%;
+}
+.c_right .c_right_goods .c_right_head{
+	width: 100%;
+	height: 40px;
+	background: #f2f2f2;
+	line-height: 40px;
+}
+.c_right .c_right_goods .c_right_head h4{
+	padding-top: 10px;
+}
+/*商品搜索框*/
+.search-goods{
+	margin-top: 20px;
+	margin-bottom: 19px;
+	/*width: 451px;*/
+	height: 45px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	line-height: 43px;
+	overflow: hidden;
+}
+.search-goods input{
+	border: 0;
+}
+.search-goods .goods-ico{
+	background: url(../images/customerServerChat/user_icon.png) no-repeat 13px 7px;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+}
+.search-goods .goods-text{
+	width: 400px;
+	height: 45px;
+	line-height: 43px;
+}
+/*商品搜索下*/
+.goods_look{
+	border-top: 1px solid #999;
+	height: 117px;
+	width: 100%;
+	padding-left: 8px;
+}
+.goods_look ul{
+	padding: 17px 14px;
+}
+.goods_look ul li{
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	margin-right: 9px;
+	margin-bottom: 14px;
+}
+.goods_look ul li a{
+	display: inline-block;
+	height: 33px;
+	width: 94px;
+	font-size: 18px;
+	color: #333;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #999;
+	text-decoration: none;
+}
+/*购物车*/
+.c_right .goods_car .goods_car_cart{
+	background: #f2f2f2;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+.c_right h4{
+	font-size: 20px;
+	color: #333;
+	padding-top: 10px;
+	padding-left: 20px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+.c_right .goods_car .goods_car_list{
+	margin-top: 10px;
+	border-bottom: 3px solid #e3e3e3;
+}
+.c_right .goods_car .goods_car_list table {
+	width: 100%;
+	text-align: center;
+
+}
+.c_right .goods_car .goods_car_list thead{
+	height: 55px;
+	/*display: block;*/
+	background:#e3e3e3;
+}
+.c_right .goods_car .goods_car_list tbody{
+	overflow-y: auto;
+	height: 147px;
+	/*display: block;*/
+	border-bottom: 1px solid #e3e3e3;
+}
+.c_right .goods_car .goods_car_list tr{
+	height: 51px;
+}
+.c_right .goods_car .goods_car_list td {
+	padding-left: 10px;
+}
+.c_right .goods_car .goods_car_list td input{
+	text-align: center;
+	border: 1px solid #333;
+}
+/*订单详情*/
+.c_right .goods_detail{
+	margin-top: 20px;
+	width: 100%;
+}
+.c_right .goods_detail .goods_detail_yy{
+	width: 100%;
+	height: 100px;
+	background: #e3e3e3;
+	margin-bottom: 20px;
+}
+.c_right .goods_detail .goods_detail_yy h4{
+	padding-top: 39px;
+	float: left;
+}
+.c_right .goods_detail .goods_detail_yy .calaendar{
+	float: left;
+	line-height: 100px;
+}
+.c_right .goods_detail .goods_detail_reinfo{
+	width: 100%;
+	height: 40px;
+	background: #e3e3e3;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+/*场景*/
+.c_right .goods_detail .scene{
+
+}
+.c_right .goods_detail .scene ul li{
+	float: left;
+	width: 96px;
+	height: 60px;
+	background:#f2f2f2;
+	border-radius: 8px;
+	cursor: pointer;
+	color: #666666;
+	font-size: 12px;
+	margin-right: 5px;
+	text-align: center;
+}
+.c_right .goods_detail .scene ul li p{
+	padding-top: 6px;
+}
+.c_right .goods_detail .scene ul li.current{
+	background: #0000cc;
+	color: #fff;
+}
+.c_right .goods_detail .scene ul li:first-child{
+	margin-left: 20px;
+}
+/*收货地址*/
+.c_right .goods_detail .adress{
+	margin-top: 20px;
+	height: 120px;
+	/*width: 668px;*/
+	border: 1px solid #666;
+	padding-top: 16px;
+	padding-left: 20px;
+	position: relative;
+}
+.c_right .goods_detail .adress p{
+	line-height: 34px;
+	font-size: 14px;
+	color: #333;
+}
+.c_right .goods_detail .adress p span.adress_padding{
+	position: absolute;
+	left: 219px;
+}
+/*发送按钮*/
+.c_right .goods_detail .send{
+	width:343px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 43px;
+}
+.c_right .goods_detail .send input{
+	width: 343px;
+	height: 60px;
+	background: #cd0000;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+	font-size: 24px;
+	line-height: 60px;
+}
+/*备注弹出框*/
+#remarkModal .modal-dialog{
+	width: 700px;
+	height: 310px;
+	border-radius: 8px;
+}
+#remarkModal .modal-dialog .modal-content{
+	height: 310px;
+	position: absolute;
+	top: 50%;
+	/*margin-top: -200px;*/
+	left: 50%;
+	margin-left: -442px;
+	*margin-left: 135px;
+}
+#remarkModal .modal-dialog .modal-content .modal-header{
+	background: #f2f2f2;
+	height: 40px;
+	width: 698px;
+	border-radius: 8px;
+	*width: 668px;
+}
+#remarkModal .modal-dialog .modal-content .modal-body{
+	text-align: center;
+	padding: 0;
+}
+#remarkModal .modal-dialog .modal-content .modal-body h4{
+	color: #666;
+	font-size: 24px;
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+	padding: 18px 0;
+}
+#remarkModal .modal-dialog .modal-content .modal-body input{
+	border: 1px solid #999;
+	width: 438px;
+	height: 58px;
+	color: #333;
+	font-size: 20px;
+	margin-top: 21px;
+	padding-left: 20px;
+	line-height: 58px;
+}
+#remarkModal .modal-dialog .modal-content .modal-footer{
+	border-top: 0;
+}
+#remarkModal .modal-dialog .modal-content .modal-footer .remarkbtn{
+	left: 50%;
+	position: absolute;
+	margin-top: 22px;
+	border: 1px solid #666;
+	border-radius: 5px;
+	background: #c0c0bf;
+	width: 328px;
+	height: 38px;
+	font-size: 20px;
+	margin-left: -164px;
+}
+/*左侧商品名称下拉*/
+
+/*隐藏框的样式*/
+    .search_hidden{
+        width:204px;
+        border: 1px solid #333;
+        position:absolute;
+        display:none;
+    }
+    /*显示框的样式*/
+    .search_show{
+        width: 204px;
+        border: 1px solid #333;
+        position: absolute;
+        display: block;
+        z-index: 999;
+    }
+    /*鼠标移入选中的样式*/
+    .search_onmouseover{
+        color:#ffffff;
+        background-color:highlight;
+        width:100%;
+    }
+    /*匹配时的样式*/
+    .search_onmouseout{
+        color:#000000;
+        width:100%;
+        background-color:#fff;
+    }
+    /*订单发送框*/
+    .orderform{
+    	width:260px;
+		/*position: absolute;
+		top: 20px;
+		right: 45px;*/
+		border: 1px solid #e3e3e3;
+		/*background: #fff;*/
+    }
+    .orderform h4{
+    	text-align: center;
+    	height: 39px;
+    	border-bottom: 1px solid #e3e3e3;
+    	line-height: 39px;
+    }
+      .orderform p{
+      	padding-left: 8px;
+      	color: #999;
+      	font-size:20px;
+      	height: 34px;
+      	line-height: 34px;
+      	border-bottom: 1px solid #e3e3e3;
+      }
+      .orderform p span{
+      	color: #333;
+      	font-size: 20px;
+      }
+      .orderform p span.orderNumberForm{
+		color: #333;
+		font-size: 14px;
+	  }
+      .orderform .order_table{
+      	text-align: center;
+      	width: 100%;
+      }
+      .orderform .order_table tbody tr{
+      	border-bottom: 1px solid #e3e3e3;
+      }
+      .orderform p.orderform_qd{
+      	text-align: center;
+      	/*width: 100%;*/
+      	height: 28px;
+      	background: #11e6c0;
+      	text-decoration: none;
+      	line-height: 28px;
+      }
+       .orderform p.orderform_qd a{
+       	cursor: pointer;
+       	text-decoration: none;
+       }
+
+/*确认订单 弹出框*/
+#userOrderModal .modal-dialog{
+	width: 700px;
+	height: 310px;
+	border-radius: 8px;
+}
+#userOrderModal .modal-dialog .modal-content{
+	height: 310px;
+	position: absolute;
+	top: 50%;
+	/*margin-top: -200px;*/
+	left: 50%;
+	margin-left: -442px;
+	*margin-left: 135px;
+}
+#userOrderModal .modal-dialog .modal-content .modal-header{
+	background: #f2f2f2;
+	height: 40px;
+	width: 698px;
+	border-radius: 8px;
+	*width: 668px;
+}
+#userOrderModal .modal-dialog .modal-content .modal-body{
+	text-align: center;
+	padding: 0;
+}
+#userOrderModal .modal-dialog .modal-content .modal-body h4{
+	color: #666;
+	font-size: 24px;
+	border-top: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+	padding: 18px 0;
+}
+#userOrderModal .modal-dialog .modal-content .modal-body input{
+	border: 1px solid #999;
+	width: 438px;
+	height: 58px;
+	color: #333;
+	font-size: 20px;
+	margin-top: 21px;
+	padding-left: 20px;
+	line-height: 58px;
+}
+#userOrderModal .modal-dialog .modal-content .modal-footer{
+	border-top: 0;
+}
+#userOrderModal .modal-dialog .modal-content .modal-footer .remarkbtn{
+	left: 50%;
+	position: absolute;
+	margin-top: 22px;
+	border: 1px solid #666;
+	border-radius: 5px;
+	background: #c0c0bf;
+	width: 328px;
+	height: 38px;
+	font-size: 20px;
+	margin-left: -164px;
+}

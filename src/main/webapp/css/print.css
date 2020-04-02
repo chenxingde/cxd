@@ -1,0 +1,9 @@
+#print {
+	width: 100px;
+	text-align: center;
+}
+#print div {
+	margin-top: 1px;
+	text-align: left;
+	font-size: 12px;
+}
