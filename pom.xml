@@ -79,6 +79,28 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- 跳转到jsp页面开始-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+        </dependency>
+        <!-- 跳转到jsp页面结束-->
+        <!--此配置只是为了修改页面的时候不需要重新启动项目开始,
+        详情：https://blog.csdn.net/wyqwilliam/article/details/83306904-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--此配置只是为了修改页面的时候不需要重新启动项目结束-->
     </dependencies>
 <!--Maven构建项目的时候需要的基本配置：一般创建一个maven项目的时候会自动配置-->
     <build>
@@ -89,5 +111,7 @@
             </plugin>
         </plugins>
     </build>
+
+
 
 </project>
