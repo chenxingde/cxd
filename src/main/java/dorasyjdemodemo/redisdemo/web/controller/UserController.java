@@ -2,6 +2,7 @@ package dorasyjdemodemo.redisdemo.web.controller;
 
 import dorasyjdemodemo.redisdemo.biz.entity.SuUser;
 import dorasyjdemodemo.redisdemo.biz.util.Assert;
+import dorasyjdemodemo.redisdemo.dao.SuUserDao;
 import dorasyjdemodemo.redisdemo.enums.ResultCodeEnum;
 import dorasyjdemodemo.redisdemo.service.suUserService.SuUserService;
 import jdk.nashorn.internal.runtime.logging.Logger;
@@ -23,6 +24,17 @@ import javax.xml.ws.RespectBinding;
 public class UserController {
     @Resource
     SuUserService suUserService;
+    @Resource
+    SuUserDao suUserDao;
+    @RequestMapping("/insertSuUser")
+    public int insertSuUser(){
+        SuUser user=  new SuUser();
+        user.setMobile("18257195118");
+        user.setCardNumber("1234567890");
+        user.setVipType((byte)1);
+        log.info("执行insertSuUser");
+        return suUserDao.insert(user);
+    }
     @RequestMapping("/getUserByMybatisPlus")
     public SuUser getUserByMybatisPlus(Integer id){
         Assert.isNull(id, ResultCodeEnum.CLIENT_PARAM_ERROR);
