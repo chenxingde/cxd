@@ -31,7 +31,7 @@ public class UserController {
         SuUser user=  new SuUser();
         user.setMobile("18257195118");
         user.setCardNumber("1234567890");
-        user.setVipType((byte)1);
+        user.setVipType(1);
         log.info("执行insertSuUser");
         return suUserDao.insert(user);
     }

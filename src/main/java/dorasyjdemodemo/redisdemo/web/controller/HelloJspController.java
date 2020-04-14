@@ -14,6 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloJspController {
     @RequestMapping("/loveyujiao")
     public String getJsp(){
-        return "login";
+        return "WEB-INF/jsp/login";
     }
 }
